@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.codialup.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_kursFragment"
+            app:destination="@id/kursFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guruhlar2"
+            app:destination="@id/guruhlar2" />
+        <action
+            android:id="@+id/action_homeFragment_to_mentorlar2"
+            app:destination="@id/mentorlar2" />
+    </fragment>
+    <fragment
+        android:id="@+id/kursFragment"
+        android:name="com.example.codialup.KursFragment"
+        android:label="fragment_kurs"
+        tools:layout="@layout/fragment_kurs" >
+        <action
+            android:id="@+id/action_kursFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.codialup.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/guruhlar2"
+        android:name="com.example.codialup.Guruhlar"
+        android:label="fragment_guruhlar"
+        tools:layout="@layout/fragment_guruhlar" >
+        <action
+            android:id="@+id/action_guruhlar2_to_guruhlarRoyhatiFragment"
+            app:destination="@id/guruhlarRoyhatiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guruhlarRoyhatiFragment"
+        android:name="com.example.codialup.guruhlarRoyhatiFragment"
+        android:label="fragment_guruhlar_royhati"
+        tools:layout="@layout/fragment_guruhlar_royhati" >
+        <action
+            android:id="@+id/action_guruhlarRoyhatiFragment_to_addGruppaFragment"
+            app:destination="@id/addGruppaFragment" />
+        <action
+            android:id="@+id/action_guruhlarRoyhatiFragment_to_itemPagerFragment1"
+            app:destination="@id/itemPagerFragment1" />
+        <action
+            android:id="@+id/action_guruhlarRoyhatiFragment_to_itemPagerFragment2"
+            app:destination="@id/itemPagerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemPagerFragment1"
+        android:name="com.example.codialup.itemPagerFragment1"
+        android:label="fragment_item_pager1"
+        tools:layout="@layout/fragment_item_pager1" >
+        <action
+            android:id="@+id/action_itemPagerFragment1_to_showPupils"
+            app:destination="@id/showPupils" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGruppaFragment"
+        android:name="com.example.codialup.addGruppaFragment"
+        android:label="fragment_add_gruppa"
+        tools:layout="@layout/fragment_add_gruppa" />
+    <fragment
+        android:id="@+id/showPupils"
+        android:name="com.example.codialup.showPupils"
+        android:label="fragment_show_pupils"
+        tools:layout="@layout/fragment_show_pupils" >
+        <action
+            android:id="@+id/action_showPupils_to_addPupils"
+            app:destination="@id/addPupils" />
+        <action
+            android:id="@+id/action_showPupils_to_addPupils2"
+            app:destination="@id/addPupils" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPupils"
+        android:name="com.example.codialup.AddPupils"
+        android:label="fragment_add_pupils"
+        tools:layout="@layout/fragment_add_pupils" >
+        <action
+            android:id="@+id/action_addPupils_to_showPupils"
+            app:destination="@id/showPupils" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorlar2"
+        android:name="com.example.codialup.Mentorlar"
+        android:label="fragment_mentorlar"
+        tools:layout="@layout/fragment_mentorlar" >
+        <action
+            android:id="@+id/action_mentorlar2_to_mentorlarRoyxatiFragment"
+            app:destination="@id/mentorlarRoyxatiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorlarRoyxatiFragment"
+        android:name="com.example.codialup.MentorlarRoyxatiFragment"
+        android:label="fragment_mentorlar_royxati"
+        tools:layout="@layout/fragment_mentorlar_royxati" >
+        <action
+            android:id="@+id/action_mentorlarRoyxatiFragment_to_addMentorFragment"
+            app:destination="@id/addMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMentorFragment"
+        android:name="com.example.codialup.addMentorFragment"
+        android:label="fragment_add_mentor"
+        tools:layout="@layout/fragment_add_mentor" />
+    <fragment
+        android:id="@+id/itemPagerFragment2"
+        android:name="com.example.codialup.itemPagerFragment2"
+        android:label="fragment_item_pager2"
+        tools:layout="@layout/fragment_item_pager2" />
+</navigation>

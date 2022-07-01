@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".showPupils">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/codialSariq"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codial 6"
+            android:textColor="@color/codialTextColor"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_15sdp"
+            >
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codial 6"
+                android:textColor="@color/codialTextColor"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/pupils_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O’quvchilar soni: 20 ta"
+                android:textColor="@color/codialTextColor"
+                android:textSize="@dimen/_16ssp" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaqti: 16:30 - 18:30"
+                android:textColor="@color/codialTextColor"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_lesson_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guruhga darsni boshlash"
+            android:textColor="@color/codialTextColor"
+            android:shadowColor="@color/black"
+            android:elevation="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barcha o’quvchilar ro’yxati:"
+            android:textColor="@color/codialTextColor"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/_16ssp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/item_rv3"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

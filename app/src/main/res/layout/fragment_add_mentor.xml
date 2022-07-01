@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".addMentorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding = "@dimen/_20sdp"
+        >
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/edit_text_color"
+            android:hint="  Familiyasi"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/edit_text_color"
+            android:hint="  Ismi"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            />
+        <EditText
+            android:id="@+id/father_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/edit_text_color"
+            android:hint="  Otasining ismi"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qo'shish"
+        android:textSize="@dimen/_13ssp"
+        android:backgroundTint="#0A252F"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginVertical="@dimen/_50sdp"/>
+
+</LinearLayout>
